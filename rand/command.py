@@ -8,7 +8,7 @@ class RandCommand(BaseCommand):
     syntax = Syntax(
         [
             Positional("column", required=True, otl_type=OTLType.TEXT),
-            Positional("count", required=False, otl_type=OTLType.NUMBERIC),
+            Positional("count", required=False, otl_type=OTLType.INTEGER),
         ],
     )
     idempotent = False
